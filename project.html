@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Rithik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12rem 9% 6rem;
+            text-align: center;
+        }
+
+        .project-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .project-section p.subtitle {
+            font-size: 2rem;
+            color: #d1d1d1;
+            margin-bottom: 3.5rem;
+        }
+
+        .project-box {
+            background-color: #161616;
+            border-radius: 12px;
+            padding: 4rem 5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 750px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            width: 100%;
+            margin-bottom: 3.5rem;
+        }
+
+        .project-card {
+            background-color: #1f1f1f;
+            border: 1.5px solid rgba(183, 75, 75, 0.3);
+            border-radius: 10px;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            color: #b74b4b;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card i {
+            font-size: 3rem;
+            color: #b74b4b;
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #b74b4b;
+            background-color: #252525;
+            box-shadow: 0 0 20px rgba(183, 75, 75, 0.35);
+            color: #ff6b6b;
+        }
+
+        .project-card:hover i {
+            color: #ff6b6b;
+            transform: scale(1.1);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1.2rem 3.5rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            background-color: #b74b4b;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s ease;
+            width: auto;
+            min-width: 200px;
+            box-shadow: 0 4px 12px rgba(183, 75, 75, 0.3);
+        }
+
+        .back-button:hover {
+            background-color: #a23a3a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(183, 75, 75, 0.45);
+        }
+
+        @media (max-width: 768px) {
+            .project-section {
+                padding: 10rem 5% 4rem;
+            }
+
+            .project-section h1 {
+                font-size: 3rem;
+            }
+
+            .project-section p.subtitle {
+                font-size: 1.6rem;
+            }
+
+            .project-box {
+                padding: 3rem 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .project-card {
+                padding: 2rem;
+                font-size: 1.8rem;
+            }
+
+            .back-button {
+                width: 100%;
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Portfolio.html" class="logo">Rithik</a>
+
+        <nav>
+            <a href="Portfolio.html">Home</a>
+            <a href="project.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+        </nav>
+    </header>
+
+    <section class="project-section">
+        <h1>My Projects</h1>
+        <p class="subtitle">Here are my projects:</p>
+        <div class="project-box">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span>ATM STIMULATOR</span>
+                </div>
+                <div class="project-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>PORTFOLIO</span>
+                </div>
+            </div>
+
+            <a href="Portfolio.html" class="back-button">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>

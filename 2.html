@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Portfolio Website </title>
+    <script>
+        // JavaScript function to toggle the visibility of the services paragraph
+        function toggleServices() {
+            var servicesParagraph = document.getElementById("services-paragraph");
+            // Toggle the 'hidden' class to show/hide the paragraph
+            servicesParagraph.classList.toggle("hidden");
+        }
+    </script>
+    <style>
+        /* Add a hidden class to hide the paragraph initially */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Portfolio.html" class="logo">Rithik</a>
+
+        <nav>
+            <a href="Portfolio.html" class="active">Home</a>
+            <a href="#" onclick="toggleServices()">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="myimage.jpg" alt="Rithik">
+        </div>
+        <div class="home-content">
+            <h1>Hi, it's <span>Rithik</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Student of Aditya engineering college, and I am currently pursuing my Diploma course in Aditya Polytechnic
+                Colleges and My aim is to be a Graphics Designer and a professional web designer</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rithik-satya-rowthula-603a76394/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/_rithik__.x.__/?__pwa=1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="contact.html" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <!-- Hidden paragraph for services -->
+    <section id="services-paragraph" class="hidden">
+        <p>Here are the services I offer:</p>
+        <ul>
+            <li>Graphics Design</li>
+            <li>Web Design</li>
+            <li>UI/UX Design</li>
+            <li>Branding and Logo Design</li>
+        </ul>
+    </section>
+</body>
+
+</html>

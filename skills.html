@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Rithik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skills-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12rem 9% 6rem;
+            text-align: center;
+        }
+
+        .skills-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .skills-section h1 span {
+            color: #b74b4b;
+        }
+
+        .skills-section p.subtitle {
+            font-size: 2rem;
+            color: #d1d1d1;
+            margin-bottom: 3.5rem;
+        }
+
+        .skills-box {
+            background-color: #161616;
+            border-radius: 12px;
+            padding: 4.5rem 5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            margin-bottom: 3.5rem;
+        }
+
+        .skill-card {
+            background-color: #1f1f1f;
+            border: 1.5px solid rgba(183, 75, 75, 0.3);
+            border-radius: 10px;
+            padding: 2.2rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .skill-card i {
+            font-size: 2.8rem;
+            color: #b74b4b;
+            min-width: 35px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-4px);
+            border-color: #b74b4b;
+            background-color: #252525;
+            box-shadow: 0 0 20px rgba(183, 75, 75, 0.35);
+        }
+
+        .skill-card:hover i {
+            color: #ff6b6b;
+            transform: scale(1.15);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1.2rem 3.5rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            background-color: #b74b4b;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 12px rgba(183, 75, 75, 0.3);
+            min-width: 200px;
+        }
+
+        .back-button:hover {
+            background-color: #a23a3a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(183, 75, 75, 0.45);
+        }
+
+        @media (max-width: 768px) {
+            .skills-section {
+                padding: 10rem 5% 4rem;
+            }
+
+            .skills-section h1 {
+                font-size: 3rem;
+            }
+
+            .skills-section p.subtitle {
+                font-size: 1.6rem;
+            }
+
+            .skills-box {
+                padding: 3rem 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .skill-card {
+                padding: 1.8rem 1.5rem;
+                font-size: 1.5rem;
+            }
+
+            .back-button {
+                width: 100%;
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Portfolio.html" class="logo">Rithik</a>
+
+        <nav>
+            <a href="Portfolio.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="education.html">Education</a>
+        </nav>
+    </header>
+
+    <section class="skills-section">
+        <h1>My <span>Skills</span></h1>
+        <p class="subtitle">Technologies, domains, and practical skills I work with:</p>
+        <div class="skills-box">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>AI & Agentic AI Enthusiast</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-rocket"></i>
+                    <span>Building Real-World Projects</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>AI Tools Explorer</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span>AI Agent Engineer</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-terminal"></i>
+                    <span>Prompt Engineer</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python Full Stack Developer</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Java</span>
+                </div>
+            </div>
+
+            <a href="Portfolio.html" class="back-button">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
+

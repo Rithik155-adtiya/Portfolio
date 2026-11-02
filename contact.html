@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rithik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12rem 9% 6rem;
+            text-align: center;
+        }
+
+        .contact-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section h1 span {
+            color: #b74b4b;
+        }
+
+        .contact-section p.subtitle {
+            font-size: 2rem;
+            color: #d1d1d1;
+            margin-bottom: 3.5rem;
+        }
+
+        .contact-box {
+            background-color: #161616;
+            border-radius: 12px;
+            padding: 4.5rem 5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 650px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-buttons-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            max-width: 380px;
+            margin-bottom: 3.5rem;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.4rem 3rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            gap: 1.2rem;
+            width: 100%;
+        }
+
+        .instagram-btn {
+            background: linear-gradient(45deg, #f58529, #e4405f);
+        }
+
+        .instagram-btn:hover {
+            transform: translateY(-3px) scale(1.03);
+            background: linear-gradient(45deg, #e4405f, #f58529);
+            box-shadow: 0 6px 25px rgba(228, 64, 95, 0.45);
+        }
+
+        .linkedin-btn {
+            background: linear-gradient(45deg, #0077b5, #00a0dc);
+        }
+
+        .linkedin-btn:hover {
+            transform: translateY(-3px) scale(1.03);
+            background: linear-gradient(45deg, #00a0dc, #0077b5);
+            box-shadow: 0 6px 25px rgba(0, 119, 181, 0.45);
+        }
+
+        .contact-btn i {
+            font-size: 2.4rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1.2rem 3.5rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            background-color: #b74b4b;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 12px rgba(183, 75, 75, 0.3);
+            min-width: 200px;
+        }
+
+        .back-button:hover {
+            background-color: #a23a3a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(183, 75, 75, 0.45);
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 10rem 5% 4rem;
+            }
+
+            .contact-section h1 {
+                font-size: 3rem;
+            }
+
+            .contact-section p.subtitle {
+                font-size: 1.6rem;
+            }
+
+            .contact-box {
+                padding: 3rem 2rem;
+            }
+
+            .contact-btn {
+                font-size: 1.6rem;
+                padding: 1.2rem 2.5rem;
+            }
+
+            .back-button {
+                width: 100%;
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Portfolio.html" class="logo">Rithik</a>
+
+        <nav>
+            <a href="Portfolio.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="resume.html">Resume</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact <span>Me</span></h1>
+        <p class="subtitle">Feel free to connect or reach out to me:</p>
+        <div class="contact-box">
+            <div class="contact-buttons-group">
+                <a href="https://www.instagram.com/_rithik__.x.__/?__pwa=1" target="_blank" class="contact-btn instagram-btn">
+                    <i class="fa-brands fa-instagram"></i> Connect on Instagram
+                </a>
+
+                <a href="https://www.linkedin.com/in/rithik-satya-rowthula-603a76394/" target="_blank" class="contact-btn linkedin-btn">
+                    <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                </a>
+            </div>
+
+            <a href="Portfolio.html" class="back-button">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
